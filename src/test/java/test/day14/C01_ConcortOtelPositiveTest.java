@@ -9,13 +9,7 @@ public class C01_ConcortOtelPositiveTest extends TestBase {
 
 //1 ) Bir Class olustur : PositiveTest
 
-
-
-
-
-
-
-    //2) Bir test method olustur positiveLoginTest()
+ //2) Bir test method olustur positiveLoginTest()
 @Test
     public void positiveLoginTest(){
     // https://www.concorthotel.com/ adresine git

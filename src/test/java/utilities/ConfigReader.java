@@ -14,8 +14,10 @@ public class ConfigReader {
     // istediğimiz keye adi value'yu bize gertirmek
     static {
         String dosyaYolu="configuration.properties";
+
+        FileInputStream fileInputStream= null;
         try {
-            FileInputStream fileInputStream=new FileInputStream(dosyaYolu);
+            fileInputStream = new FileInputStream(dosyaYolu);
             properties=new Properties();
             properties.load(fileInputStream);
         } catch (FileNotFoundException e) {
@@ -23,6 +25,9 @@ public class ConfigReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+
+
+
 
     }
 
