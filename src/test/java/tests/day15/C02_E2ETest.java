@@ -11,7 +11,7 @@ import utilities.Driver;
 
 public class C02_E2ETest {
     @Test
-    public void test(){
+    public void test() throws InterruptedException {
         //1. Tests packagenin altına class olusturun: D17_CreateHotel
         //2. Bir metod olusturun: createHotel
         //3. https://qa-environment.concorthotel.com/ adresine git.
@@ -50,6 +50,7 @@ public class C02_E2ETest {
 
         //8. Save butonuna tıklayın.
         qaConcortPage.savebutonu.click();
+        Thread.sleep(2000);
         //9. "Hotel was inserted successfully" textinin göründüğünü test edin.
         Assert.assertTrue(qaConcortPage.alertBox.isDisplayed());
         //10. OK butonuna tıklayın.
