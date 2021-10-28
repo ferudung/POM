@@ -31,7 +31,7 @@ public class C01_ReadExcel {
         Cell cell= row.getCell(1);
         System.out.println(cell);
     }
-    @Test
+    @Test(groups = "birinciGrup")
     public void test2() throws IOException {
         //7. Dosya yolunu bir String degiskene atayalim
         String dosyaYolu="src/test/java/resources/ulkeler.xlsx";

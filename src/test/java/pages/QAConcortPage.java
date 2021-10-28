@@ -107,6 +107,8 @@ public class QAConcortPage {
 
     @FindBy(xpath = "//tbody/tr//td[4]")
     public List<WebElement> dorduncuSutunListesi;
+
+
     public String printData(int satir, int sutun) {
         // ornekteki haliyle 3.satir, 5.sutundaki elemani yazdiralim
         //  String xpath= //tbody//tr[3]//td[5]
