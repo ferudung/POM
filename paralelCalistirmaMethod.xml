@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="paralel class calistirma" parallel="methods" thread-count="2" verbose="3">
+    <!--paralel calismada calisacak testlerin secimi ile driverlararasinda
+    gorev bolusumunun hangi seviyede olacagi konusundanki
+     secimin bir bagi yoktur. calisacak dosyaların karismamasi için
+     mümkün olduğu kadar ayrimi test. package gibi toparlayici
+     şekilde yapmalıyız.-->
+    <test name="paralel calisma 1">
+        <classes>
+            <class name="tests.day13.C02_PagesFacebook"></class>
+            <class name="tests.day17.HomeWork_DemoQA"></class>
+            <class name="tests.day14.C01_ConcortOtelPositiveTest"></class>
+            <class name="tests.day15.C01_DriverClassKullanimi"></class>
+        </classes>
+    </test>
+</suite>
